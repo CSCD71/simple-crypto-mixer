@@ -11,6 +11,7 @@ The goal is to understand how **cryptographic commitments, Merkle trees, and zer
 ## Prerequisites
 
 A crypto mixer leverages a Zero‑Knowledge algorithm called **Proof of Membership**.  
+
 Before starting this assignment, we recommend that you familiarize yourself with **Zero‑Knowledge Proofs**, **zk‑SNARKs**, and common proof constructions such as **Proof of Commitment** and **Proof of Membership**.
 
 Recommended readings:
@@ -86,7 +87,7 @@ function deposit(uint256 commitment) payable public
 
 This function allows users to deposit **exactly 0.1 ETH** into the contract and add the `commitment` to the on‑chain Merkle tree.
 
-```
+```solidity
 function withdraw(bytes calldata proof, address payable to, uint256 nonce) public
 ```
 
